@@ -11,7 +11,7 @@ public class User {
     private Long id;
     @NotNull
     @NotEmpty
-    @Pattern(regexp = "[a-zA-Z0-9]")
+    @Pattern(regexp = "^[a-zA-Z0-9 ]{6,12}$")
     private String name;
     @NotNull
     @NotEmpty
